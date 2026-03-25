@@ -1,132 +1,493 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Primary SEO -->
-    <title>Thales Alexandre dos Santos Cavalcanti | Desenvolvedor Web | Projeto Pessoal</title>
-    <meta name="title" content="Thales Alexandre dos Santos Cavalcanti | Desenvolvedor Web">
-    <meta name="description" content="Página pessoal de Thales Alexandre dos Santos Cavalcanti, desenvolvedor web. Projeto estruturado com HTML5 semântico, focado em boas práticas de desenvolvimento, acessibilidade e performance.">
-    <meta name="author" content="Thales Alexandre dos Santos Cavalcanti">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="keywords" content="Thales Alexandre, Thales Alexandre dos Santos Cavalcanti, desenvolvedor web, HTML5, CSS3, JavaScript, página pessoal, portfólio, desenvolvimento web, front-end, programador">
-    <meta name="language" content="Portuguese">
-    <meta name="revisit-after" content="7 days">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="canonical" href="https://thales-alexandre.replit.app/">
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-
-    <!-- Open Graph / Facebook / WhatsApp -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Thales Alexandre dos Santos Cavalcanti | Desenvolvedor Web">
-    <meta property="og:description" content="Página pessoal e portfólio de Thales Alexandre dos Santos Cavalcanti. Projeto estruturado com HTML5 semântico e boas práticas de desenvolvimento.">
-    <meta property="og:image" content="https://thales-alexandre.replit.app/og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Thales Alexandre dos Santos Cavalcanti - Desenvolvedor Web">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:url" content="https://thales-alexandre.replit.app/">
-    <meta property="og:site_name" content="Thales Alexandre | Desenvolvedor Web">
-    <meta property="og:updated_time" content="2026-03-12T12:00:00+00:00">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Thales Alexandre dos Santos Cavalcanti | Desenvolvedor Web">
-    <meta name="twitter:description" content="Página pessoal e portfólio de Thales Alexandre. Desenvolvimento web com foco em boas práticas e HTML5 semântico.">
-    <meta name="twitter:image" content="https://thales-alexandre.replit.app/twitter-image.jpg">
-    <meta name="twitter:image:alt" content="Thales Alexandre dos Santos Cavalcanti - Desenvolvedor Web">
-    <meta name="twitter:site" content="@thalesalexandre">
-    <meta name="twitter:creator" content="@thalesalexandre">
-
-    <!-- Theme -->
-    <meta name="theme-color" content="#2c2c2c">
-    <meta name="msapplication-TileColor" content="#2c2c2c">
-
-    <!-- Structured Data: ProfilePage + Person -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        "name": "Perfil de Thales Alexandre dos Santos Cavalcanti",
-        "description": "Página pessoal e portfólio de Thales Alexandre dos Santos Cavalcanti, desenvolvedor web. Projeto estruturado com HTML5 semântico e boas práticas de desenvolvimento.",
-        "url": "https://thales-alexandre.replit.app/",
-        "inLanguage": "pt-BR",
-        "dateCreated": "2026-01-01",
-        "dateModified": "2026-03-12",
-        "copyrightYear": "2026",
-        "mainEntity": {
-            "@type": "Person",
-            "name": "Thales Alexandre dos Santos Cavalcanti",
-            "givenName": "Thales Alexandre",
-            "familyName": "dos Santos Cavalcanti",
-            "jobTitle": "Desenvolvedor Web",
-            "url": "https://thales-alexandre.replit.app/",
-            "sameAs": [
-                "https://www.linkedin.com/in/thalesalexandre",
-                "https://github.com/thalesalexandre"
-            ],
-            "knowsAbout": ["HTML5", "CSS3", "JavaScript", "Desenvolvimento Web", "Front-end"],
-            "worksFor": {
-                "@type": "Organization",
-                "name": "Projeto Pessoal"
-            }
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Página HTML5 semântica com formulário avançado, mídia e foco em acessibilidade e performance.">
+  <meta name="color-scheme" content="light">
+  <title>Portal HTML5 Acessível</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --text: #111827;
+      --muted: #374151;
+      --primary: #0b5fff;
+      --primary-contrast: #ffffff;
+      --border: #d1d5db;
+      --focus: #f59e0b;
+      --ok: #065f46;
+      --error: #991b1b;
     }
-    </script>
 
-    <!-- Structured Data: BreadcrumbList -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Início",
-            "item": "https://thales-alexandre.replit.app/"
-        }]
+    * {
+      box-sizing: border-box;
     }
-    </script>
 
-    <!-- Structured Data: WebSite -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Thales Alexandre | Desenvolvedor Web",
-        "url": "https://thales-alexandre.replit.app/",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://thales-alexandre.replit.app/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+    html {
+      scroll-behavior: smooth;
     }
-    </script>
 
-    <!-- Favicon / Icons -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="manifest" href="/site.webmanifest">
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
 
-    <style>*,::before,::after{box-sizing:border-box;margin:0;padding:0}body{font-family:Georgia,serif;background:#f5f5f0;color:#222;display:flex;flex-direction:column;min-height:100vh;line-height:1.6}header{background:#2c2c2c;color:#fff;padding:1.5rem 2rem;text-align:center}header h1{font-size:clamp(1.1rem,3vw,1.6rem);font-weight:400;letter-spacing:.05em}main{flex:1;display:flex;justify-content:center;align-items:center;padding:3rem 2rem}section{text-align:center;max-width:600px;width:100%}h2{font-size:clamp(1.5rem,5vw,2rem);margin-bottom:.75rem;color:#1a1a1a}p{font-size:1rem;color:#555;line-height:1.7}footer{background:#2c2c2c;color:#aaa;text-align:center;padding:1rem 2rem;font-size:.875rem}</style>
+    a {
+      color: var(--primary);
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 0.25rem;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 0.5rem;
+      top: -3rem;
+      background: #000;
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      text-decoration: none;
+      z-index: 1000;
+      border-radius: 0.25rem;
+    }
+
+    .skip-link:focus {
+      top: 0.5rem;
+    }
+
+    .container {
+      width: min(100%, 72rem);
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    header,
+    nav,
+    main,
+    section,
+    article,
+    aside,
+    footer {
+      display: block;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      margin: 0;
+      font-size: clamp(1.25rem, 2vw, 1.8rem);
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 0.35rem 0.55rem;
+      border-radius: 0.35rem;
+    }
+
+    nav a:hover {
+      background: #e9eefc;
+    }
+
+    .hero {
+      padding-block: 2rem 1.25rem;
+    }
+
+    .hero p {
+      max-width: 65ch;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(12, 1fr);
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.7rem;
+      padding: 1rem;
+    }
+
+    .col-8 {
+      grid-column: span 8;
+    }
+
+    .col-4 {
+      grid-column: span 4;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border);
+      display: block;
+    }
+
+    figcaption {
+      color: var(--muted);
+      font-size: 0.93rem;
+      margin-top: 0.5rem;
+    }
+
+    .media-stack {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    fieldset {
+      border: 1px solid var(--border);
+      border-radius: 0.6rem;
+      padding: 1rem;
+      margin: 0;
+    }
+
+    legend {
+      font-weight: 700;
+      padding-inline: 0.3rem;
+    }
+
+    .fields {
+      display: grid;
+      gap: 0.8rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .field {
+      display: grid;
+      gap: 0.35rem;
+    }
+
+    .field-full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+      width: 100%;
+      font: inherit;
+      border: 1px solid #9ca3af;
+      border-radius: 0.45rem;
+      padding: 0.55rem 0.65rem;
+      background: #fff;
+      color: var(--text);
+    }
+
+    input:invalid,
+    select:invalid,
+    textarea:invalid {
+      border-color: #ef4444;
+    }
+
+    input:valid,
+    select:valid,
+    textarea:valid {
+      border-color: #10b981;
+    }
+
+    .actions {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--primary-contrast);
+      border-color: var(--primary);
+      cursor: pointer;
+      max-width: max-content;
+      padding-inline: 1rem;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--text);
+      border-color: var(--border);
+      cursor: pointer;
+      max-width: max-content;
+      padding-inline: 1rem;
+    }
+
+    .checklist li {
+      margin-bottom: 0.35rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      background: #e8f5ee;
+      color: var(--ok);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+      background: var(--surface);
+    }
+
+    @media (max-width: 900px) {
+      .col-8,
+      .col-4 {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .fields {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
 
-    <header role="banner">
-        <h1>Projeto de Thales Alexandre</h1>
-    </header>
+  <header>
+    <div class="container topbar">
+      <h1 class="brand">Portal HTML5 Acessível</h1>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#midia">Mídia</a></li>
+          <li><a href="#inscricao">Inscrição</a></li>
+          <li><a href="#validacao">Validação</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main role="main">
-        <section aria-labelledby="titulo-boas-vindas">
-            <h2 id="titulo-boas-vindas">Bem-vindo</h2>
-            <p>Página estruturada com HTML5 semântico.</p>
-        </section>
-    </main>
+  <main id="conteudo" class="container">
+    <section id="inicio" class="hero" aria-labelledby="titulo-intro">
+      <h2 id="titulo-intro">Estrutura semântica, mídia e formulário avançado</h2>
+      <p>
+        Esta página foi construída apenas com HTML5 e CSS interno, usando elementos
+        semânticos, navegação por teclado, validações nativas de formulário e conteúdo
+        multimídia com foco em desempenho e acessibilidade.
+      </p>
 
-    <footer role="contentinfo">
-        <p><small>&copy; 2026 &mdash; Thales Alexandre dos Santos Cavalcanti</small></p>
-    </footer>
+    </section>
 
+    <div class="grid" id="midia">
+      <article class="card col-8" aria-labelledby="titulo-midia">
+        <h3 id="titulo-midia">Conteúdo multimídia</h3>
+        <div class="media-stack">
+          <figure>
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1280&q=70"
+              width="1280"
+              height="720"
+              loading="lazy"
+              decoding="async"
+              alt="Pessoa programando em um notebook em ambiente de estudo.">
+            <figcaption>Imagem ilustrativa otimizada com lazy loading e dimensões definidas.</figcaption>
+          </figure>
+
+          <figure>
+            <video
+              controls
+              preload="metadata"
+              width="960"
+              height="540"
+              poster="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=960&q=70">
+              <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo HTML5.
+            </video>
+            <figcaption>Vídeo com controle nativo, leve e sem autoplay para melhor performance.</figcaption>
+          </figure>
+
+          <figure>
+            <audio controls preload="none">
+              <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg">
+              Seu navegador não suporta áudio HTML5.
+            </audio>
+            <figcaption>Áudio com carregamento sob demanda.</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <aside class="card col-4" id="validacao" aria-labelledby="titulo-validacao">
+        <h3 id="titulo-validacao">Checklist de validação</h3>
+        <ul class="checklist">
+          <li>Estrutura semântica: <strong>header, nav, main, section, article, aside, footer</strong></li>
+          <li>Navegação por teclado com foco visível e <strong>skip link</strong></li>
+          <li>Todos os campos possuem <strong>label</strong> associado por <code>for</code>/<code>id</code></li>
+          <li>Formulário com validações nativas: <code>required</code>, <code>pattern</code>, <code>min/max</code>, tipos específicos</li>
+          <li>Multimídia com textos alternativos e controles</li>
+          <li>Layout responsivo por grid + media queries</li>
+          <li>Cores com bom contraste e tipografia legível</li>
+        </ul>
+      </aside>
+    </div>
+
+    <section id="inscricao" class="card" aria-labelledby="titulo-formulario">
+      <h3 id="titulo-formulario">Formulário avançado de inscrição</h3>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+          <div class="fields">
+            <div class="field">
+              <label for="nome">Nome completo</label>
+              <input id="nome" name="nome" type="text" required minlength="3" maxlength="80" autocomplete="name">
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" required autocomplete="email" inputmode="email">
+            </div>
+
+            <div class="field">
+              <label for="telefone">Telefone</label>
+              <input
+                id="telefone"
+                name="telefone"
+                type="tel"
+                required
+                autocomplete="tel"
+                inputmode="numeric"
+                pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$"
+                placeholder="(11) 99999-9999"
+                aria-describedby="hint-telefone">
+              <small id="hint-telefone" class="hint">Formato: (DDD) 99999-9999</small>
+            </div>
+
+            <div class="field">
+              <label for="nascimento">Data de nascimento</label>
+              <input id="nascimento" name="nascimento" type="date" required max="2015-12-31">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Perfil acadêmico</legend>
+          <div class="fields">
+            <div class="field">
+              <label for="curso">Curso</label>
+              <select id="curso" name="curso" required>
+                <option value="">Selecione</option>
+                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                <option value="si">Sistemas de Informação</option>
+                <option value="cc">Ciência da Computação</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="periodo">Período atual (1 a 10)</label>
+              <input id="periodo" name="periodo" type="number" min="1" max="10" step="1" required>
+            </div>
+
+            <div class="field field-full">
+              <label for="portfolio">Portfólio (URL)</label>
+              <input id="portfolio" name="portfolio" type="url" placeholder="https://seuportfolio.dev" inputmode="url">
+            </div>
+
+            <div class="field field-full">
+              <label for="objetivos">Objetivos de aprendizado</label>
+              <textarea id="objetivos" name="objetivos" rows="5" minlength="10" maxlength="400" required aria-describedby="hint-objetivos"></textarea>
+              <small id="hint-objetivos" class="hint">Descreva entre 10 e 400 caracteres.</small>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferências</legend>
+          <div class="fields">
+            <div class="field field-full">
+              <label for="turno">Turno preferido</label>
+              <input id="turno" name="turno" list="turnos" required>
+              <datalist id="turnos">
+                <option value="Manhã"></option>
+                <option value="Tarde"></option>
+                <option value="Noite"></option>
+                <option value="EaD"></option>
+              </datalist>
+            </div>
+
+            <div class="field">
+              <label for="cor">Cor para tema pessoal</label>
+              <input id="cor" name="cor" type="color" value="#0b5fff">
+            </div>
+
+            <div class="field">
+              <label for="nivel">Nível de HTML (0 a 100)</label>
+              <input id="nivel" name="nivel" type="range" min="0" max="100" value="50">
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="actions">
+          <button class="btn-primary" type="submit">Enviar inscrição</button>
+          <button class="btn-secondary" type="reset">Limpar campos</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        &copy; 2024 Portal HTML5 Acessível. Todos os direitos reservados. Desenvolvido como exemplo de boas práticas em HTML5, semântica, acessibilidade e performance.
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
